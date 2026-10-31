@@ -1,0 +1,22 @@
+services:
+    app:
+        build:
+            context: ./docker
+            args:
+                UID: ${UID:-1000}
+                GID: ${GID:-1000}
+        ports:
+            - '8000:8000'
+            - '5173:5173'
+        environment:
+            DOCKER: 'true'
+            SERVER_HOST: 0.0.0.0
+            SERVER_PORT: 8000
+        volumes:
+            - .:/var/www/html
+            - vendor:/var/www/html/vendor
+            - node_modules:/var/www/html/node_modules
+
+volumes:
+    vendor:
+    node_modules:

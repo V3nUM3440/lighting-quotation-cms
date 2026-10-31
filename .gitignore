@@ -1,0 +1,64 @@
+# Dependencies
+/node_modules
+/vendor
+
+# Environment and local secrets
+.env
+.env.*
+!.env.example
+/auth.json
+compose.override.yaml
+compose.override.yml
+docker-compose.override.yml
+
+# Build output and generated files
+/public/build
+/public/fonts-manifest.dev.json
+/public/hot
+/public/storage
+/resources/js/actions
+/resources/js/routes
+/resources/js/wayfinder
+/storage/*.key
+/storage/pail
+
+# Test and tool caches
+/.phpunit.cache
+.phpunit.result.cache
+/coverage
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editors and IDEs
+/.fleet
+/.idea
+/.nova
+/.vscode
+/.zed
+*.swp
+*.swo
+*~
+
+# AI assistant local settings
+/.agents
+/.amp
+/.claude
+/.codex
+/.cursor
+/.factory
+/.grok
+/.junie
+/.kiro
+/.pi
+/.mcp.json
+/AGENTS.md
+/boost.json
+/opencode.json
+/opencode.jsonc

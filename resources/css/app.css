@@ -1,0 +1,28 @@
+@import 'tailwindcss';
+@import '@heroui/styles';
+
+@source '../views';
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+
+@theme {
+    --font-sans:
+        'Inter', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji',
+        'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    --font-heading: 'Plus Jakarta Sans', var(--font-sans);
+    --color-field-border: var(--field-border);
+    --color-chart: var(--chart);
+}
+
+:root {
+    --accent: #fcb040;
+    --accent-foreground: #232323;
+    --field-border-width: 1px;
+    --field-border: oklch(0.82 0.006 286);
+    --field-border-focus: var(--accent);
+    --chart: #b8730a;
+}
+
+.dark {
+    --field-border: oklch(0.42 0.006 286);
+    --chart: #c27c0e;
+}
